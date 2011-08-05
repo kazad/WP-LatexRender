@@ -1,7 +1,7 @@
 Overview
 ========
 
-I've been using [Latex Render](http://sixthform.info/steve/wordpress/) for my Wordpress blog, but want to try MathJax (javascript math rendering).
+I've been using [Latex Render](http://sixthform.info/steve/wordpress/) for my Wordpress blog, but want to try MathJax (javascript math rendering). This is a replacement for the latex.php engine.
 
 Problem: switching to MathJax breaks RSS and email!
 
@@ -20,8 +20,10 @@ Bonus!
 * You can use $$ ... $$ (my preferred mathjax settings) for displayed equations, no need for [tex]...[/tex]
 * You can use %% ... %% (my settings) for inline equations. Currently, inline is "converted" to HTML. So simple things like exponents become "sup" tags, \sqrt becomes the html entity, etc. These are wrapped in a
 
+
     <span class="tex-inline" alt="(original formula)">...my HTML conversion... </span>
+
 
 and you can convert this to real inline MathJax with:
 
-$('.tex-inline').each(function(){ $(this).text('%%' + ($(this).attr('alt')) + '%%'); });
+    $('.tex-inline').each(function(){ $(this).text('%%' + ($(this).attr('alt')) + '%%'); });
