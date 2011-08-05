@@ -27,8 +27,8 @@ Bonus!
 <pre>
 <code>
     <span class="tex-inline" alt="(original formula)">...my HTML conversion... </span>
-</pre>
 </code>
+</pre>
 
 
 and you can convert this to real inline MathJax with:
