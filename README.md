@@ -26,7 +26,7 @@ Bonus!
 
 <pre>
 <code>
-    <span class="tex-inline" alt="(original formula)">...my HTML conversion... </span>
+    &lt;span class="tex-inline" alt="(original formula)">...my HTML conversion... &lt;/span>
 </code>
 </pre>
 
