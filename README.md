@@ -11,7 +11,11 @@ Solution:
 * Tag generated images with a class ('tex'). The "alt" attribute is the original Latex.
 * Convert the images back into MathJax with javascript:
 
+<pre>
+<code>
     $('.tex').each(function(){ $(this).replaceWith('$$' + ($(this).attr('alt')) + '$$'); });
+</code>
+</pre>
 
 * Manually run MathJax to convert the images back into its format [fits better, font scaling, etc.]
 
@@ -20,8 +24,11 @@ Bonus!
 * You can use $$ ... $$ (my preferred mathjax settings) for displayed equations, no need for [tex]...[/tex]
 * You can use %% ... %% (my settings) for inline equations. Currently, inline is "converted" to HTML. So simple things like exponents become "sup" tags, \sqrt becomes the html entity, etc. These are wrapped in a
 
-
+<pre>
+<code>
     <span class="tex-inline" alt="(original formula)">...my HTML conversion... </span>
+</pre>
+</code>
 
 
 and you can convert this to real inline MathJax with:
