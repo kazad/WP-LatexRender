@@ -9,6 +9,9 @@ Solution:
 
 * Keep wp-latexrender as normal. All content between [tex]...[/tex] is converted to an image, RSS and email friendly.
 * Tag generated images with a class ('tex'). The "alt" attribute is the original Latex.
+
+In your blog, after the content is rendered:
+
 * Convert the images back into MathJax with javascript:
 
 <pre>
